@@ -23,7 +23,10 @@ const Contact = () => {
 
       if (response.ok && result.success) {
         setFormStatus({ success: true, message: 'Thank you! Your message has been sent.' });
-        e.currentTarget.reset();
+        // Add a check to ensure e.currentTarget is not null before resetting
+        if (e.currentTarget) {
+          e.currentTarget.reset();
+        }
       } else {
         setFormStatus({ success: false, message: result.message || 'An error occurred. Please try again.' });
       }
