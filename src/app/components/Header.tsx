@@ -35,7 +35,7 @@ const Header = () => {
     >
       <nav className="container mx-auto flex justify-between items-center">
         <Link href="#hero" className="text-2xl font-bold text-gray-900 hover:text-teal-600 transition-colors">
-          Teacher Joy
+          Teacher Ada
         </Link>
         <div className="md:hidden">
           <button

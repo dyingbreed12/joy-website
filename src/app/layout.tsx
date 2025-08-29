@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hadassah's English Tutoring",
-  description: "Personalized Online English Lessons with Teacher Joy",
+  title: "Ada's English Tutoring",
+  description: "Personalized Online English Lessons with Teacher Ada",
 };
 
 export default function RootLayout({

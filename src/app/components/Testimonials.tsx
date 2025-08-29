@@ -2,17 +2,17 @@ import { FaQuoteLeft } from 'react-icons/fa';
 
 const testimonials = [
   {
-    quote: "Teacher Joy's lessons are incredibly helpful and fun! My confidence in speaking English has grown so much. The lessons are always tailored to my interests, making it easy to stay motivated.",
-    name: 'Jia L.',
+    quote: "Teacher Ada's lessons are incredibly helpful and fun! My confidence in speaking English has grown so much. The lessons are always tailored to my interests, making it easy to stay motivated.",
+    name: 'Lin T.',
     country: 'China',
   },
   {
-    quote: "I passed my TOEIC exam thanks to Teacher Joy's patient and clear explanations. She provided me with the perfect strategies and practice I needed. Highly recommend her!",
+    quote: "I passed my TOEIC exam thanks to Teacher Ada's patient and clear explanations. She provided me with the perfect strategies and practice I needed. Highly recommend her!",
     name: 'Kenji S.',
     country: 'Japan',
   },
   {
-    quote: "I've been learning with Joy for over a year, and my business English has improved tremendously. Her feedback is always precise and actionable, which is exactly what I needed.",
+    quote: "I've been learning with Ada for over a year, and my business English has improved tremendously. Her feedback is always precise and actionable, which is exactly what I needed.",
     name: 'Min-ji P.',
     country: 'Korea',
   },
