@@ -12,7 +12,7 @@ const Hero = () => {
 
       <div className="relative z-10 text-white">
         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-lg">
-          Your Journey to English Fluency Starts Here.
+          Unlock Your English Potential.
         </h1>
         <p className="mt-4 text-xl md:text-2xl font-semibold text-white max-w-3xl mx-auto drop-shadow-md">
           Personalized and supportive English lessons for every student.
