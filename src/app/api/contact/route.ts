@@ -16,7 +16,7 @@ export async function POST(request: Request) {
 
     // Send the email using Resend
     await resend.emails.send({
-      from: 'Teacher Ada <teacherada.com/>', // Use a domain you've verified with Resend
+      from: 'Teacher Ada <notifications.teacherada.com/>', // Use a domain you've verified with Resend
       to: recipientEmail, 
       subject: `New Message from Teacher Ada Website - ${name}`,
       html: `
