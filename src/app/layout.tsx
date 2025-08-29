@@ -22,8 +22,6 @@ export const metadata: Metadata = {
     siteName: 'Teacher Ada',
     images: [
       {
-        // Note: I've updated the file name here to "Ada.jpg" for consistency,
-        // but you will need to rename your image file as well.
         url: 'https://www.teacherada.com/images/Ada.jpg',
         width: 800,
         height: 600,

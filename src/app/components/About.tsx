@@ -18,13 +18,13 @@ const About = () => {
         <div className="md:w-1/2">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Teacher Ada</h2>
           <p className="text-lg text-gray-700 mb-6">
-            Personalized English lessons for learners worldwide, 
+            Hi! I'm Ada, an English educator with over <strong>5 years of experience</strong> helping students around the globe build confidence. My teaching is all about creating a relaxed, friendly environment where every student feels comfortable. I've had the pleasure of teaching hundreds of learners from a variety of backgrounds, including <strong>China, Japan, South Korea, Mongolia, and Saudi Arabia.</strong>
           </p>
           <p className="text-lg text-gray-700 mb-6">
-            Over 5 years of experience.
+            My approach is simple: I adapt to you. Whether you're a child needing an engaging, playful lesson or a professional requiring focused exam preparation, I tailor my style to match your personality and goals. I believe a good lesson is one where we both feel comfortable and can easily communicate.
           </p>
           <p className="text-lg text-gray-700">
-            Hundreds of students from China, Japan, South Korea, Mongolia, and Saudi Arabia.
+            Let's connect and begin your journey to fluency in a way that works best for you. I look forward to working together!
           </p>
         </div>
       </div>
