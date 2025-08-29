@@ -3,7 +3,8 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const recipientEmail = 'hadassahj2@gmail.com'; // Teacher Ada's email!
+//const recipientEmail = 'hadassahj2@gmail.com'; // Teacher Ada's email!
+const recipientEmail = 'leeEgino1178@outlook.com'; // Teacher Ada's email!
 
 export async function POST(request: Request) {
   try {
@@ -16,7 +17,8 @@ export async function POST(request: Request) {
 
     // Send the email using Resend
     await resend.emails.send({
-      from: 'Teacher Ada <notifications.teacherada.com/>', // Use a domain you've verified with Resend
+      // from: 'notifications.teacherada.com', // Use a domain you've verified with Resend
+      from: `${name}` + '<onboarding@resend.dev>', // Use a domain you've verified with Resend
       to: recipientEmail, 
       subject: `New Message from Teacher Ada Website - ${name}`,
       html: `
