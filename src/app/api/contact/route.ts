@@ -1,10 +1,11 @@
-// src/app/api/contact/route.ts
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-//const recipientEmail = 'hadassahj2@gmail.com'; // Teacher Ada's email!
-const recipientEmail = 'leeEgino1178@outlook.com'; // Teacher Ada's email!
+
+// The email address that will receive the forwarded messages.
+// This is the address you set up with ImprovMX.
+const recipientEmail = 'contact@notifications.teacherada.com';
 
 export async function POST(request: Request) {
   try {
@@ -17,10 +18,17 @@ export async function POST(request: Request) {
 
     // Send the email using Resend
     await resend.emails.send({
-      // from: 'notifications.teacherada.com', // Use a domain you've verified with Resend
-      from: `${name}` + '<onboarding@resend.dev>', // Use a domain you've verified with Resend
+      // The 'from' email must be from a domain you've verified with Resend.
+      // We are using a simple, professional format.
+      from: 'Teacher Ada <contact@notifications.teacherada.com>',
+      
+      // The 'to' email is where the message will be sent.
       to: recipientEmail, 
+      
+      // The subject line of the email
       subject: `New Message from Teacher Ada Website - ${name}`,
+      
+      // The HTML body of the email
       html: `
         <div style="font-family: sans-serif; line-height: 1.6; color: #333;">
           <h2 style="color: #00796B;">New Contact Form Submission</h2>
