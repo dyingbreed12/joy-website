@@ -6,8 +6,8 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center gap-12">
         <div className="md:w-1/2">
           <Image
-            src="/images/Joy.jpg"
-            alt="Teacher Joy"
+            src="/images/Ada.jpg"
+            alt="Teacher Ada"
             width={600}
             height={600}
             sizes="(max-width: 768px) 100vw, 50vw"

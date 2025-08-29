@@ -1,21 +1,38 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  
-});
+const geistSans = GeistSans;
+const geistMono = GeistMono;
 
 export const metadata: Metadata = {
-  title: "Ada's English Tutoring",
-  description: "Personalized Online English Lessons with Teacher Ada",
+  title: "Teacher Ada | English Tutor for Kids, Adults & IELTS Prep",
+  description: "Personalized online English lessons for all levels. Specialized tutoring for kids and adults, professional business English, and expert IELTS exam preparation for students in Chinese, Japanese, and Korean-speaking countries.",
+  keywords: [
+    'online English tutor', 'English teacher for kids', 'English lessons for adults', 'IELTS tutor',
+    'IELTS preparation', 'ESL for kids', 'business English', 'professional English lessons',
+    'English teacher for Chinese students', 'English tutor Japan', 'learn English Korea'
+  ],
+  authors: [{ name: 'Teacher Ada' }],
+  openGraph: {
+    title: "Teacher Ada | English Tutor for Kids, Adults & IELTS Prep",
+    description: "Personalized online English lessons for all levels. Specialized tutoring for kids and adults, professional business English, and expert IELTS exam preparation for students in Chinese, Japanese, and Korean-speaking countries.",
+    url: "https://www.teacherada.com",
+    siteName: 'Teacher Ada',
+    images: [
+      {
+        // Note: I've updated the file name here to "Ada.jpg" for consistency,
+        // but you will need to rename your image file as well.
+        url: 'https://www.teacherada.com/images/Ada.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Teacher Ada',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({

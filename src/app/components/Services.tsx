@@ -1,25 +1,25 @@
-import { FaComment, FaBriefcase, FaGraduationCap, FaTools } from 'react-icons/fa';
+import { FaChild, FaUserGraduate, FaBook, FaBriefcase, FaGraduationCap } from 'react-icons/fa';
 
 const services = [
   {
-    icon: <FaComment size={48} className="text-teal-500 mb-4" />,
-    title: 'Conversational English',
-    description: 'Build confidence and fluency through natural, guided conversations on a wide range of topics.',
+    icon: <FaChild size={48} className="text-teal-500 mb-4" />,
+    title: 'English for Kids & Teens',
+    description: 'Engaging, fun, and patient lessons designed for young learners to build a strong foundation in English.',
   },
   {
-    icon: <FaBriefcase size={48} className="text-teal-500 mb-4" />,
-    title: 'Business English',
-    description: 'Perfect your professional communication skills for meetings, presentations, and corporate environments.',
+    icon: <FaUserGraduate size={48} className="text-teal-500 mb-4" />,
+    title: 'General English for Adults',
+    description: 'Improve your conversational fluency, vocabulary, and grammar for everyday use in a supportive environment.',
   },
   {
     icon: <FaGraduationCap size={48} className="text-teal-500 mb-4" />,
-    title: 'Exam Preparation',
-    description: 'Prepare effectively for standardized tests like TOEFL and TOEIC with focused strategies and practice.',
+    title: 'IELTS & Exam Preparation',
+    description: 'Achieve your target score with expert strategies and focused practice for the speaking, listening, reading, and writing sections.',
   },
   {
-    icon: <FaTools size={48} className="text-teal-500 mb-4" />,
-    title: 'Customized Lessons',
-    description: 'Receive a personalized curriculum designed specifically to meet your unique learning goals and pace.',
+    icon: <FaBriefcase size={48} className="text-teal-500 mb-4" />,
+    title: 'Business & Professional English',
+    description: 'Master the language of the workplace with lessons focused on professional communication, presentations, and interviews.',
   },
 ];
 
@@ -31,6 +31,7 @@ const Services = () => {
         <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
           I offer a range of personalized lessons to help you achieve your specific English learning goals.
         </p>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div
